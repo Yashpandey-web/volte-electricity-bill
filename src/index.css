@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html { scroll-behavior: smooth; }
+body { @apply bg-ink text-slate-200 font-sans antialiased; }
+:focus-visible { outline: 2px solid #3B82F6; outline-offset: 2px; }
+.field { @apply w-full rounded-lg border border-white/10 bg-navy px-3 py-2.5 text-sm text-white placeholder:text-slate-500 transition focus:border-volt; }
+.field-err { @apply border-red-400/70; }
+.btn { @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-semibold transition active:scale-[0.97] disabled:opacity-50; }
+.fade-in { animation: fade .4s ease both; }
+@keyframes fade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+@media print {
+  @page { size: A4; margin: 12mm; }
+  body * { visibility: hidden; }
+  #receipt, #receipt * { visibility: visible; }
+  #receipt { position: absolute; left: 0; top: 0; width: 100%; box-shadow: none !important; border-radius: 0 !important; }
+}
