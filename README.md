@@ -1,5 +1,7 @@
 VOLTÉ ⚡
 
+https://volte-electricity-bill.vercel.app/
+
 Premium Electricity Bill Receipt Generator
 
 VOLTÉ is a modern, responsive electricity billing application that transforms meter readings into clear, professional electricity bill receipts.
@@ -15,37 +17,6 @@ Features
 - Consumer and billing information management
 - Responsive interface for desktop and mobile
 
-Tech Stack
-
-- React
-- TypeScript
-- Vite
-- Tailwind CSS
-- Lucide React
-- Client-side PDF generation
-
-Getting Started
-
-Prerequisites
-
-Install Node.js and npm.
-
-Installation
-
-Clone the repository:
-
-git clone https://github.com/Yashpandey-web/volte-electricity-bill.git
-cd volte-electricity-bill
-
-Install dependencies:
-
-npm install
-
-Start the development server:
-
-npm run dev
-
-Open the local URL displayed in your terminal.
 
 How It Works
 
